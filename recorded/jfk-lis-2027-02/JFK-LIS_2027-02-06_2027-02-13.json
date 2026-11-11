@@ -1,0 +1,38 @@
+[
+  {
+    "price_range_in_relation_to_other_periods": "high",
+    "price_insights_low": 470,
+    "price_insights_high": 660,
+    "from_airport": "New York (JFK)",
+    "to_airport": "Lisbon (LIS)",
+    "departure_date": "2027-02-06",
+    "return_date": "2027-02-13",
+    "total_price": "$713",
+    "total_price_as_number": 713,
+    "total_duration_seconds": 142500,
+    "total_stops": 2,
+    "buy_link": "https://www.google.com/travel/flights?tfs=GlwSCjIwMjctMDItMDYiHwoDSkZLEgoyMDI3LTAyLTA2GgNDTU4qAkFUMgMyMDEiHwoDQ01OEgoyMDI3LTAyLTA3GgNMSVMqAkFUMgM5ODBqBRIDSkZLcgUSA0xJUxpcEgoyMDI3LTAyLTEzIh8KA0xJUxIKMjAyNy0wMi0xMxoDQ01OKgJBVDIDOTgzIh8KA0NNThIKMjAyNy0wMi0xNBoDSkZLKgJBVDIDMjAwagUSA0xJU3IFEgNKRktCAQFIAZgBAQ&curr=usd",
+    "departure_flight_departure_description": "8:00 PM on Sat, Feb 6",
+    "departure_flight_arrival_description": "11:35 AM on Sun, Feb 7",
+    "departure_flight_airline": "Royal Air Maroc",
+    "departure_flight_stops": 1,
+    "departure_flight_duration": "10 hr 35 min",
+    "departure_stops_info": [
+      {
+        "stop_airport": "CMN",
+        "stop_duration_seconds": 8100
+      }
+    ],
+    "return_flight_departure_description": "5:55 PM on Sat, Feb 13",
+    "return_flight_arrival_description": "5:55 PM on Sun, Feb 14",
+    "return_flight_airline": "Royal Air Maroc",
+    "return_flight_stops": 1,
+    "return_flight_duration": "29 hr",
+    "return_stops_info": [
+      {
+        "stop_airport": "CMN",
+        "stop_duration_seconds": 70200
+      }
+    ]
+  }
+]

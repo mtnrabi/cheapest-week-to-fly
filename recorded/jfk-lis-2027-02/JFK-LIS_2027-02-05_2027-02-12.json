@@ -1,0 +1,74 @@
+[
+  {
+    "price_range_in_relation_to_other_periods": "high",
+    "price_insights_low": 470,
+    "price_insights_high": 660,
+    "from_airport": "New York (JFK)",
+    "to_airport": "Lisbon (LIS)",
+    "departure_date": "2027-02-05",
+    "return_date": "2027-02-12",
+    "total_price": "$699",
+    "total_price_as_number": 699,
+    "total_duration_seconds": 119400,
+    "total_stops": 2,
+    "buy_link": "https://www.google.com/travel/flights?tfs=GlwSCjIwMjctMDItMDUiHwoDSkZLEgoyMDI3LTAyLTA1GgNMSFIqAkFBMgMxNDIiHwoDTEhSEgoyMDI3LTAyLTA2GgNMSVMqAkJBMgM1MDRqBRIDSkZLcgUSA0xJUxpcEgoyMDI3LTAyLTEyIh8KA0xJUxIKMjAyNy0wMi0xMhoDTUFEKgJJQjIDNTMwIh8KA01BRBIKMjAyNy0wMi0xMhoDSkZLKgJJQjIDMjExagUSA0xJU3IFEgNKRktCAQFIAZgBAQ&curr=usd",
+    "departure_flight_departure_description": "10:10 AM on Fri, Feb 5",
+    "departure_flight_arrival_description": "12:05 PM on Sat, Feb 6",
+    "departure_flight_airline": "American, British Airways",
+    "departure_flight_stops": 1,
+    "departure_flight_duration": "20 hr 55 min",
+    "departure_stops_info": [
+      {
+        "stop_airport": "LHR",
+        "stop_duration_seconds": 39300
+      }
+    ],
+    "return_flight_departure_description": "8:20 AM on Fri, Feb 12",
+    "return_flight_arrival_description": "3:35 PM on Fri, Feb 12",
+    "return_flight_airline": "Iberia | American",
+    "return_flight_stops": 1,
+    "return_flight_duration": "12 hr 15 min",
+    "return_stops_info": [
+      {
+        "stop_airport": "MAD",
+        "stop_duration_seconds": 5700
+      }
+    ]
+  },
+  {
+    "price_range_in_relation_to_other_periods": "high",
+    "price_insights_low": 470,
+    "price_insights_high": 660,
+    "from_airport": "New York (JFK)",
+    "to_airport": "Lisbon (LIS)",
+    "departure_date": "2027-02-05",
+    "return_date": "2027-02-12",
+    "total_price": "$699",
+    "total_price_as_number": 699,
+    "total_duration_seconds": 87900,
+    "total_stops": 2,
+    "buy_link": "https://www.google.com/travel/flights?tfs=GlwSCjIwMjctMDItMDUiHwoDSkZLEgoyMDI3LTAyLTA1GgNMSFIqAkFBMgMxMDAiHwoDTEhSEgoyMDI3LTAyLTA2GgNMSVMqAkJBMgM1MDRqBRIDSkZLcgUSA0xJUxpbEgoyMDI3LTAyLTEyIh8KA0xJUxIKMjAyNy0wMi0xMhoDTUFEKgJJQjIDNTQwIh4KA01BRBIKMjAyNy0wMi0xMhoDSkZLKgJBQTICOTVqBRIDTElTcgUSA0pGS0IBAUgBmAEB&curr=usd",
+    "departure_flight_departure_description": "6:25 PM on Fri, Feb 5",
+    "departure_flight_arrival_description": "12:05 PM on Sat, Feb 6",
+    "departure_flight_airline": "American, British Airways",
+    "departure_flight_stops": 1,
+    "departure_flight_duration": "12 hr 40 min",
+    "departure_stops_info": [
+      {
+        "stop_airport": "LHR",
+        "stop_duration_seconds": 9900
+      }
+    ],
+    "return_flight_departure_description": "6:30 AM on Fri, Feb 12",
+    "return_flight_arrival_description": "1:15 PM on Fri, Feb 12",
+    "return_flight_airline": "Iberia, American",
+    "return_flight_stops": 1,
+    "return_flight_duration": "11 hr 45 min",
+    "return_stops_info": [
+      {
+        "stop_airport": "MAD",
+        "stop_duration_seconds": 7500
+      }
+    ]
+  }
+]

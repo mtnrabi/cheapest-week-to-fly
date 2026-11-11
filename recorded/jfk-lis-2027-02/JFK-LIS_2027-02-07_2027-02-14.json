@@ -1,0 +1,28 @@
+[
+  {
+    "price_range_in_relation_to_other_periods": "typical",
+    "price_insights_low": 470,
+    "price_insights_high": 660,
+    "from_airport": "New York (JFK)",
+    "to_airport": "Lisbon (LIS)",
+    "departure_date": "2027-02-07",
+    "return_date": "2027-02-14",
+    "total_price": "$628",
+    "total_price_as_number": 628,
+    "total_duration_seconds": 55800,
+    "total_stops": 0,
+    "buy_link": "https://www.google.com/travel/flights?tfs=GjsSCjIwMjctMDItMDciHwoDSkZLEgoyMDI3LTAyLTA3GgNMSVMqAlRQMgMyMTBqBRIDSkZLcgUSA0xJUxo7EgoyMDI3LTAyLTE0Ih8KA0xJUxIKMjAyNy0wMi0xNBoDSkZLKgJUUDIDMjA5agUSA0xJU3IFEgNKRktCAQFIAZgBAQ&curr=usd",
+    "departure_flight_departure_description": "10:00 PM on Sun, Feb 7",
+    "departure_flight_arrival_description": "10:00 AM on Mon, Feb 8",
+    "departure_flight_airline": "Tap Air Portugal | JetBlue",
+    "departure_flight_stops": 0,
+    "departure_flight_duration": "7 hr",
+    "departure_stops_info": [],
+    "return_flight_departure_description": "4:35 PM on Sun, Feb 14",
+    "return_flight_arrival_description": "8:05 PM on Sun, Feb 14",
+    "return_flight_airline": "Tap Air Portugal | JetBlue",
+    "return_flight_stops": 0,
+    "return_flight_duration": "8 hr 30 min",
+    "return_stops_info": []
+  }
+]
