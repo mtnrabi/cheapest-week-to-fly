@@ -100,8 +100,13 @@ curl -X POST https://google-flights-live-api.p.rapidapi.com/api/google_flights/r
   -H "Content-Type: application/json" \
   -H "x-rapidapi-host: google-flights-live-api.p.rapidapi.com" \
   -H "x-rapidapi-key: $RAPIDAPI_KEY" \
-  -d '{"from_airport":"JFK","to_airport":"LIS","departure_date":"2027-02-01","return_date":"2027-02-08","currency":"usd","limit":5,"sort_type":"Price"}'
+  -d '{"from_airport":"JFK","to_airport":"LIS","departure_date":"2027-02-01","return_date":"2027-02-08","currency":"usd","limit":10}'
 ```
+
+There is no `sort_type` on purpose. Google gives no usual range and no verdict on a price-sorted page, so with
+`"sort_type":"Price"` (or `max_price`) the last two columns would be empty. The tool takes the cheapest row itself.
+Rows come back with the fewest stops first and are cut at `limit`, so a trip with many stops can be cheaper than
+the one shown. If you only want the lowest number and no verdict, add `"sort_type":"Price"` in `build_body`.
 
 The answer is a JSON array of itineraries; each has `total_price_as_number`, both legs' airline,
 stops and times, `buy_link`, and Google's range fields. Field reference: the

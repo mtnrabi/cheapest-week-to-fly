@@ -11,9 +11,11 @@ REC = Path(__file__).resolve().parent.parent / "recorded" / "jfk-lis-2027-02"
 
 def test_body_uses_documented_field_names():
     body = cw.build_body("JFK", "LIS", "2027-02-01", "2027-02-08", "usd", max_stops=0)
-    for k in ("from_airport", "to_airport", "departure_date", "return_date", "currency", "limit", "sort_type"):
+    for k in ("from_airport", "to_airport", "departure_date", "return_date", "currency", "limit"):
         assert k in body
     assert body["max_departure_stops"] == 0 and body["max_return_stops"] == 0
+    # either one drops Google's range and verdict from the answer
+    assert "sort_type" not in body and "max_price" not in body
     # nothing camelCased: the API rejects unknown fields with a 422
     assert all(k == k.lower() for k in body)
 
@@ -35,6 +37,14 @@ def test_scan_on_recorded_responses_ranks_cheapest_first():
     assert trips[-1].price == 713 and trips[-1].departure_date == "2027-02-06"
     assert trips[0].verdict in {"low", "typical", "high"}
     assert trips[0].buy_link.startswith("https://www.google.com/travel/flights")
+
+
+def test_cheapest_row_wins_when_it_is_not_first():
+    # default order: fewest stops first, so the cheapest row can come later
+    band = {"price_insights_low": 100, "price_insights_high": 200, "price_range_in_relation_to_other_periods": "low"}
+    rows = [dict(band, total_price_as_number=140, total_stops=0), dict(band, total_price_as_number=90, total_stops=2)]
+    t = cw.cheapest_trip(rows, "2027-02-01", "2027-02-08", 7)
+    assert (t.price, t.stops, t.verdict, t.range_low, t.range_high) == (90, 2, "low", 100, 200)
 
 
 def test_failed_search_is_reported_not_dropped(monkeypatch):
