@@ -63,7 +63,7 @@ class Trip:
 
 
 def build_body(origin: str, dest: str, depart: str, ret: str, currency: str,
-               max_stops: Optional[int], limit: int = 5) -> dict:
+               max_stops: Optional[int], limit: int = 10) -> dict:
     """The JSON body of one round-trip request (field names as in the API docs)."""
     body = {
         "from_airport": origin,
@@ -72,8 +72,9 @@ def build_body(origin: str, dest: str, depart: str, ret: str, currency: str,
         "return_date": ret,
         "currency": currency,
         "limit": limit,
-        "sort_type": "Price",
     }
+    # No "sort_type" on purpose: Google gives no usual range and no low/typical/high verdict on a
+    # price-sorted page, so the last two columns would be empty. cheapest_trip() picks the row.
     if max_stops is not None:
         body["max_departure_stops"] = max_stops
         body["max_return_stops"] = max_stops
